@@ -67,10 +67,18 @@
 		width: 240px;
 		height: 240px;
 		display: block;
-		background: url("../img/to-order--about.jpg") no-repeat center center;
+		background: url("../img/to-order--about-first.jpg") no-repeat center center;
 		background-size: contain;
 
 		position: absolute;
+	}
+
+	&:nth-child(2)::after {
+		background: url("../img/to-order--about.jpg") no-repeat center center;
+	}
+
+	&:last-child::after {
+		background: url("../img/to-order--about-third.jpg") no-repeat center center;
 	}
 }
 .to-order__title--about {
@@ -176,6 +184,28 @@
 			background-size: contain;
 
 			position: absolute;
+		}
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.to-order__iteam--about {
+		&::after {
+			border-radius: 50%;
+			background: url("../img/to-order--about-first@2x.jpg") no-repeat center center;
+		}
+
+		&:nth-child(2)::after {
+			background: url("../img/to-order--about@2x.jpg") no-repeat center center;
+		}
+
+		&:last-child::after {
+			background: url("../img/to-order--about-third@2x.jpg") no-repeat center center;
 		}
 	}
 }

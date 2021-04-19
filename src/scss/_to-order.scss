@@ -52,6 +52,16 @@
 
 		position: absolute;
 	}
+
+	&:nth-child(2)::after {
+		background: url("../img/icon-to-order-second.svg") no-repeat center center;
+		background-size: contain;
+	}
+
+	&:last-child::after {
+		background: url("../img/icon-to-order-third.svg") no-repeat center center;
+		background-size: contain;
+	}
 }
 .to-order__title {
 	margin-bottom: 27px;

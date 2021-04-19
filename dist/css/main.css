@@ -41,7 +41,8 @@ body {
   font-family: "Space Mono", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #939caa; }
+  color: #939caa;
+  padding-top: 97px; }
 
 .main {
   max-width: 1920px;
@@ -78,6 +79,10 @@ img {
 
 .svg-min {
   display: none; }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 79px; } }
 
 .container {
   max-width: 1140px;
@@ -240,11 +245,11 @@ img {
     border: 3px solid #fcb72b; }
 
 @media screen and (max-width: 768px) {
-  .hat--header {
+  .header {
     position: relative; }
-    .hat--header .link {
+    .header .link {
       display: none; }
-    .hat--header .link--active {
+    .header .link--active {
       display: block;
       left: 32px;
       top: calc(100vh - 100%);
@@ -330,6 +335,12 @@ img {
     background-size: contain;
     z-index: 2;
     position: absolute; }
+  .to-order__iteam:nth-child(2)::after {
+    background: url("../img/icon-to-order-second.svg") no-repeat center center;
+    background-size: contain; }
+  .to-order__iteam:last-child::after {
+    background: url("../img/icon-to-order-third.svg") no-repeat center center;
+    background-size: contain; }
 
 .to-order__title {
   margin-bottom: 27px;
@@ -344,6 +355,19 @@ img {
   font-size: 15px;
   line-height: 25px;
   color: #939caa; }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background-color: #ecebebed;
+  box-shadow: 0 10px 70px #413f3f; }
+
+.header__logo-icon {
+  fill: #495567; }
+  .header__logo-icon:hover {
+    fill: #fcb72b; }
 
 @media screen and (max-width: 768px) {
   .hat__container--header {
@@ -1013,9 +1037,13 @@ img {
     width: 240px;
     height: 240px;
     display: block;
-    background: url("../img/to-order--about.jpg") no-repeat center center;
+    background: url("../img/to-order--about-first.jpg") no-repeat center center;
     background-size: contain;
     position: absolute; }
+  .to-order__iteam--about:nth-child(2)::after {
+    background: url("../img/to-order--about.jpg") no-repeat center center; }
+  .to-order__iteam--about:last-child::after {
+    background: url("../img/to-order--about-third.jpg") no-repeat center center; }
 
 .to-order__title--about {
   margin-bottom: 27px;
@@ -1100,6 +1128,15 @@ img {
       background-size: contain;
       position: absolute; } }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .to-order__iteam--about::after {
+    border-radius: 50%;
+    background: url("../img/to-order--about-first@2x.jpg") no-repeat center center; }
+  .to-order__iteam--about:nth-child(2)::after {
+    background: url("../img/to-order--about@2x.jpg") no-repeat center center; }
+  .to-order__iteam--about:last-child::after {
+    background: url("../img/to-order--about-third@2x.jpg") no-repeat center center; } }
+
 .registration {
   background: url("../img/registration-bg.png") no-repeat right bottom, #495567;
   background-size: 1220px, 347px; }
@@ -1121,8 +1158,16 @@ img {
   display: flex;
   margin-left: auto; }
 
+.app-store-icon {
+  fill: #495567; }
+  .app-store-icon:hover {
+    fill: #996600; }
+
 .play-market {
-  margin-left: 18px; }
+  margin-left: 18px;
+  fill: #495567; }
+  .play-market:hover {
+    fill: #996600; }
 
 @media screen and (max-width: 1440px) {
   .registration__container {
@@ -1288,6 +1333,9 @@ img {
   max-width: 1920px;
   margin: 0 auto;
   background: #333a44; }
+
+.header__logo-icon--footer {
+  fill: #fff; }
 
 @media screen and (max-width: 768px) {
   .hat__container--footer {

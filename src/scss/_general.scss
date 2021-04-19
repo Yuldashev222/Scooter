@@ -12,6 +12,7 @@ body {
 	font-style: normal;
 	font-weight: normal;
 	color: #939caa;
+	padding-top: 97px;
 }
 
 .main {
@@ -56,4 +57,10 @@ img {
 
 .svg-min {
 	display: none;
+}
+
+@media screen and (max-width: $mobile) {
+	body {
+		padding-top: 79px;
+	}
 }

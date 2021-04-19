@@ -21,8 +21,20 @@
 	margin-left: auto;
 }
 
+.app-store-icon {
+	fill: #495567;
+	&:hover {
+		fill: #996600;
+	}
+}
+
 .play-market {
 	margin-left: 18px;
+	fill: #495567;
+
+	&:hover {
+		fill: #996600;
+	}
 }
 
 @media screen and (max-width: $tablet) {

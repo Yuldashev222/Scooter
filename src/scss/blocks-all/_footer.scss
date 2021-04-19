@@ -5,6 +5,10 @@
 	background: #333a44;
 }
 
+.header__logo-icon--footer {
+	fill: #fff;
+}
+
 @media screen and (max-width: $mobile) {
 	.hat__container--footer {
 		flex-direction: column;
